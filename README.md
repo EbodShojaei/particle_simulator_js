@@ -25,8 +25,8 @@ The files below are used for implementing the simulator logic (i.e., root progra
   - src
     - Game.js                       # creates the simulation given N (root kernel)
     - config
-      - objects
-        - buttonCfg.js              # defines the custom parameters to model a button generically onto the canvas
+      - schemas
+        - buttonSchema.js           # defines the custom parameters to model a button generically onto the canvas
       - objects.js                  # defines the type of objects and related properties to model using class names
     - helpers
       - state
