@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -63,3 +64,4 @@ module.exports = {
         })
     ]
 };
+/* eslint-disable no-undef */
