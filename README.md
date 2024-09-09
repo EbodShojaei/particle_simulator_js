@@ -75,4 +75,6 @@ The files below are used for implementing the simulator logic (i.e., root progra
 ```
 
 # Attributions
-Updated as of Sept. 8, 2024 15:22 PST by @ebodshojaei
+Documentation/code was reviewed/formatted by the developer and AI software (OpenAI).**
+
+** Updated as of Sept. 8, 2024 15:22 PST by @ebodshojaei
