@@ -1,0 +1,24 @@
+{
+    "name": "shojaeiebodcomp4537lab0",
+    "version": "1.0.0",
+    "description": "A dynamic particle simulator that randomizes the colour and position of N buttons in N time.\r <br>\r ##### Hosted (**[Link](https://webod.netlify.app)**)\r ##### Video (**[Link](#)**)",
+    "main": "init.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "css-loader": "^6.8.1",
+        "css-minimizer-webpack-plugin": "^5.0.1",
+        "html-webpack-plugin": "^5.5.3",
+        "mini-css-extract-plugin": "^2.7.6",
+        "style-loader": "^3.3.3",
+        "terser-webpack-plugin": "^5.3.9",
+        "webpack": "^5.88.1",
+        "webpack-cli": "^5.1.4",
+        "webpack-obfuscator": "^3.5.1"
+    }
+}
