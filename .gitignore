@@ -1,4 +1,6 @@
 _archive/
+dist/
+node_modules/
 .env
 .DS_Store
 package-lock.json
