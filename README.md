@@ -27,16 +27,18 @@ The files below are used for implementing the simulator logic (i.e., root progra
     - config
       - schemas
         - buttonSchema.js           # defines the custom parameters to model a button generically onto the canvas
+        - gridSchema.js             # defines the custom parameters for the canvas (e.g., color, size, position, layers)
       - objects.js                  # defines the type of objects and related properties to model using class names
     - helpers
       - state
         - controllers
           - Scheduler.js            # schedules time-based updates to state (ui scheduler)
           - StateManager.js         # manages object state per observer pings (ui manager)
+        - storage
+          - Memory.js               # manages memory storage and retrieval of game states (ui storage)
+          - Replay.js               # handles the replay of a specific game state from memory ()
         - Observer.js               # observes (grid) the subjects (buttons) (ui listener)
         - Subject.js                # subject (button) that is watched by the observer (grid) (ui entity)
-        - Memory.js                 # manages memory storage and retrieval of game states (ui storage)
-        - Replay.js                 # handles the replay of a specific game state from memory ()
       - view
         - Displayer.js              # rehydrates UI component state to current (ui hydrator)
         - Renderer.js               # renders Datum objects into UI components (ui renderer)
@@ -48,11 +50,11 @@ The files below are used for implementing the simulator logic (i.e., root progra
         - GridFactory.js            # concrete factory creates canvas ui components
       - obj
         - Datum.js                  # abstract datum model stores object state data
-        - Object.js                 # concrete object of object model includes vertex prop
-        - Grid.js                   # concrete object of grid model holds a reference to a dictionary of Datums
+        - SimObject.js                 # concrete object of object model includes vertex prop
+        - SimGrid.js                   # concrete object of grid model holds a reference to a dictionary of Datums
       - props
         - object.js                 # defines object properties
-        - grid.js                   # defines grid properties
+        - events.js                 # defines event handler properties
         - vertex.js                 # defines vertex properties (px, py, vx, vy)
       - ui
         - UiObject.js               # ui component for an object model (translate3d used for canvas)
@@ -65,7 +67,11 @@ The files below are used for implementing the simulator logic (i.e., root progra
   - langs
     - messages
       - en
-        - user.js                   # file stores all user input messages from client-side
+        - cache
+          - replay.js               # file accesses local storage for replay data
+        - ui
+          - menu.js                 # file stores all ui menu text for client-side
+          - pings.js                # file stores all ui output messages for client-side
 ```
 
 # Attributions
