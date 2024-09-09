@@ -32,7 +32,9 @@ export class Observer {
      * 
      * @param {Object} state - The new state of the subject.
      */
+    /* eslint-disable no-unused-vars */
     update(state) {
         throw new Error('Update method must be implemented in the subclass');
     }
+    /* eslint-disable no-unused-vars */
 }

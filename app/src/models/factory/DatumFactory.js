@@ -22,9 +22,11 @@ export class DatumFactory {
      * @param {object} schema - The schema defining the object's properties.
      * @returns {Datum} - A new instance of a Datum object.
      */
+    /* eslint-disable no-unused-vars */
     createDatum(schema) {
         throw new Error('createDatum() must be implemented by subclasses');
     }
+    /* eslint-disable no-unused-vars */
 
     /**
      * Abstract method for creating a UI component for a Datum object.
@@ -33,7 +35,9 @@ export class DatumFactory {
      * @param {Datum} datum - The data object for which to create a UI component.
      * @returns {Object} - A new instance of a UI component.
      */
+    /* eslint-disable no-unused-vars */
     createUI(datum) {
         throw new Error('createUI() must be implemented by subclasses');
     }
+    /* eslint-disable no-unused-vars */
 }
