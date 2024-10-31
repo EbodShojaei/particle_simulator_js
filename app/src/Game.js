@@ -69,5 +69,7 @@ export class Game {
         this.displayer.clearCanvas();
         // Reset the state manager
         this.stateManager.resetState();
+        // Reinitialize the game
+        this.start();
     }
 }
