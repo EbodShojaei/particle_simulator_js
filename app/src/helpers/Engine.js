@@ -241,5 +241,6 @@ export class Engine {
         this.scheduler.clearAllTasks();
         this.displayer.stopTimer();
         this.renderer.clearCanvas();
+        this.renderer.initializeCanvas();
     }
 }
